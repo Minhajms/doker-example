@@ -19,11 +19,16 @@ jobs:
       run: |
         echo "${{ secrets.EC2_PEM_KEY }}" > docker1.pem
         chmod 400 "docker1.pem"
-    - name: Deploy on EC2
-      run: |
-        ssh -i "docker1.pem" ubuntu@ec2-51-21-2-45.eu-north-1.compute.amazonaws.com
-        docker pull minhajms/my-first-docker-image:latest
-        docker stop flask-app || true
-        docker rm flask-app || true
-        docker run -d --name flask-app -p 8000:8000 minhajms/my-first-docker-image:latest
-        EOF (edited)
+    -  name: Deploy on EC2
+     run: |
+      echo "${{ secrets.EC2_PEM_KEY }}" > docker1.pem
+      chmod 400 docker1.pem
+      ssh-keyscan -H ec2-51-21-2-45.eu-north-1.compute.amazonaws.com >> ~/.ssh/known_hosts
+      ssh -i "docker1.pem" ubuntu@ec2-51-21-2-45.eu-north-1.compute.amazonaws.com << EOF
+      docker pull minhajms/my-first-docker-image:latest
+      docker stop flask-app || true
+      docker rm flask-app || true
+      docker run -d --name flask-app -p 8000:8000 minhajms/my-first-docker-image:latest
+      EOF
+
+        
