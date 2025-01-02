@@ -17,8 +17,15 @@ jobs:
       run: |
         docker build -t minhajms/my-first-docker-image:latest .
         docker push minhajms/my-first-docker-image:latest
-
+    
     - name: Set up SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.EC2_PEM_KEY }}" > docker1.pem
+        chmod 400 docker1.pem
+        ssh-keyscan -H ec2-51-21-2-45.eu-north-1.compute.amazonaws.com >> ~/.ssh/known_hosts
+    
+   - name: Set up SSH
       run: |
         echo "${{ secrets.EC2_PEM_KEY }}" > docker1.pem
         chmod 400 docker1.pem
