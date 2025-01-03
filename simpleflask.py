@@ -11,7 +11,7 @@ def home():
             <style>
                 body {
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    background-color: #f7f7f7;
+                    background-color: #f4f6f8;
                     margin: 0;
                     padding: 0;
                     color: #333;
@@ -26,26 +26,26 @@ def home():
                     font-size: 3em;
                     margin: 0;
                 }
+                header p {
+                    margin: 10px 0;
+                    font-size: 1.2em;
+                }
                 section {
                     padding: 30px;
                     margin: 20px;
                 }
-                .intro {
-                    text-align: center;
-                }
-                .skills, .projects, .contact {
+                .grid-container {
                     display: grid;
-                    grid-template-columns: 1fr 1fr;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                     gap: 20px;
-                    margin-top: 40px;
                 }
-                .skills div, .projects div, .contact div {
+                .grid-item {
                     background-color: #ecf0f1;
                     padding: 20px;
                     border-radius: 8px;
                     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 }
-                .skills h2, .projects h2, .contact h2 {
+                h2 {
                     color: #2980b9;
                 }
                 footer {
@@ -60,44 +60,66 @@ def home():
         <body>
             <header>
                 <h1>Minhaj's Portfolio</h1>
-                <p>DevOps Engineer | Data Scientist | Software Developer</p>
+                <p>Aspiring AWS Engineer | Data Scientist | DevOps Enthusiast</p>
             </header>
-            <section class="intro">
+            <section>
                 <h2>About Me</h2>
-                <p>Hi! I'm Minhaj, a passionate developer with a focus on DevOps and Data Science. I love solving complex problems and building efficient systems.</p>
+                <p>
+                    Hi, I'm Minhaj! With hands-on experience in cloud infrastructure and automation, I specialize in AWS, Terraform, and CI/CD workflows. 
+                    I am passionate about designing efficient systems, solving complex problems, and optimizing performance.
+                </p>
             </section>
-            <section class="skills">
-                <div>
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>DevOps Tools</li>
-                        <li>Docker, Kubernetes</li>
-                        <li>AWS, GCP</li>
-                        <li>Python, PHP, JavaScript</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Experience</h2>
-                    <p>I've worked with multiple technologies, including cloud computing, containerization, and automation. Currently focusing on optimizing cloud infrastructure.</p>
+            <section>
+                <h2>Skills</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>Technical</h3>
+                        <ul>
+                            <li>AWS (EC2, S3, RDS)</li>
+                            <li>Terraform, CloudFormation</li>
+                            <li>CI/CD (GitHub Actions)</li>
+                            <li>Bash Scripting, Troubleshooting</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Team Collaboration</li>
+                            <li>Leadership</li>
+                            <li>Public Speaking</li>
+                            <li>Adaptability</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-            <section class="projects">
-                <div>
-                    <h2>Projects</h2>
-                    <ul>
-                        <li>Magento Docker Setup</li>
-                        <li>Elasticsearch Configuration for E-commerce</li>
-                        <li>Data Science Projects on Kaggle</li>
-                    </ul>
+            <section>
+                <h2>Experience</h2>
+                <p>
+                    <strong>DevOps Intern, Sahaba Solutions LLP</strong> <br>
+                    Designed AWS architectures, automated resource provisioning, and enhanced CI/CD pipelines. Boosted system uptime by 25% and 
+                    streamlined MySQL backups to S3 for secure data retention.
+                </p>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>Elasticsearch Setup for Magento</h3>
+                        <p>
+                            Published a detailed guide on configuring Docker for Elasticsearch. Improved Magento search performance for 100+ users and 
+                            reduced setup errors by 30%.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <h2>Contact</h2>
-                    <p>Email: minhaj@example.com</p>
-                    <p>LinkedIn: linkedin.com/in/minhaj</p>
-                </div>
+            </section>
+            <section>
+                <h2>Contact</h2>
+                <p>Email: minhajoutflow@gmail.com</p>
+                <p>Phone: 9562474580</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/minhajms" target="_blank">linkedin.com/in/minhajms</a></p>
             </section>
             <footer>
-                <p>&copy; 2025 Minhaj. All Rights Reserved.</p>
+                <p>&copy; 2025 Minhaj S. All Rights Reserved.</p>
             </footer>
         </body>
     </html>
