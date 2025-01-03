@@ -9,41 +9,48 @@ def home():
         <head>
             <title>Minhaj's Portfolio</title>
             <style>
-                body {
-                    font-family: 'Segoe UI', sans-serif;
+                * {
                     margin: 0;
-                    background: linear-gradient(135deg, #2c3e50, #4ca1af);
-                    color: #f7f7f7;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background: #1e1e2f;
+                    color: #ffffff;
+                    line-height: 1.6;
                 }
                 header {
+                    background: #4ca1af;
                     text-align: center;
                     padding: 50px 20px;
-                    background-color: #1a252f;
                 }
                 header h1 {
-                    font-size: 3.5em;
-                    margin: 0;
+                    font-size: 3em;
+                    margin-bottom: 10px;
+                    color: #ffffff;
                 }
                 header p {
-                    font-size: 1.5em;
-                    margin-top: 10px;
+                    font-size: 1.2em;
                 }
                 .container {
                     max-width: 1200px;
-                    margin: 0 auto;
+                    margin: 20px auto;
                     padding: 20px;
                 }
                 .section {
                     margin: 20px 0;
+                    background: #2e2e3e;
                     padding: 20px;
-                    background: rgba(255, 255, 255, 0.1);
                     border-radius: 10px;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
                 }
                 .section h2 {
                     color: #4ca1af;
                     font-size: 2em;
                     margin-bottom: 10px;
+                    border-bottom: 2px solid #4ca1af;
+                    display: inline-block;
                 }
                 .grid {
                     display: grid;
@@ -51,55 +58,66 @@ def home():
                     gap: 20px;
                 }
                 .card {
-                    background: #ffffff11;
-                    padding: 20px;
+                    background: #38384a;
                     border-radius: 8px;
-                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-                    color: #f7f7f7;
+                    padding: 20px;
+                    color: #ffffff;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+                    transition: transform 0.3s ease-in-out;
+                }
+                .card:hover {
+                    transform: scale(1.05);
                 }
                 .card h3 {
-                    color: #4ca1af;
                     margin-bottom: 10px;
+                    color: #4ca1af;
                 }
                 footer {
                     text-align: center;
-                    padding: 20px 0;
-                    background: #1a252f;
-                    margin-top: 20px;
+                    padding: 20px;
+                    background: #4ca1af;
+                    color: #ffffff;
                 }
                 footer a {
-                    color: #4ca1af;
+                    color: #ffffff;
                     text-decoration: none;
+                    font-weight: bold;
+                }
+                footer a:hover {
+                    text-decoration: underline;
                 }
             </style>
         </head>
         <body>
             <header>
-                <h1>Minhaj's Portfolio</h1>
+                <h1>Minhaj S.</h1>
                 <p>Aspiring AWS Engineer | DevOps Enthusiast | Data Scientist</p>
             </header>
             <div class="container">
                 <section class="section">
                     <h2>About Me</h2>
-                    <p>Hi, I'm Minhaj! I specialize in cloud infrastructure, automation, and DevOps. With a strong foundation in AWS, Terraform, and CI/CD workflows, I strive to design scalable and efficient systems while optimizing performance.</p>
+                    <p>
+                        Hi! I'm Minhaj, a passionate professional with expertise in cloud infrastructure, DevOps, and data science. 
+                        My goal is to design efficient systems and contribute to scalable projects leveraging cutting-edge technologies.
+                    </p>
                 </section>
                 <section class="section">
                     <h2>Skills</h2>
                     <div class="grid">
                         <div class="card">
-                            <h3>Cloud & DevOps</h3>
+                            <h3>Technical</h3>
                             <ul>
                                 <li>AWS (EC2, S3, RDS)</li>
                                 <li>Terraform & CloudFormation</li>
                                 <li>CI/CD (GitHub Actions)</li>
-                                <li>Containerization (Docker, Kubernetes)</li>
+                                <li>Docker & Kubernetes</li>
                             </ul>
                         </div>
                         <div class="card">
                             <h3>Soft Skills</h3>
                             <ul>
                                 <li>Collaboration & Leadership</li>
-                                <li>Problem-Solving</li>
+                                <li>Problem Solving</li>
                                 <li>Public Speaking</li>
                                 <li>Adaptability</li>
                             </ul>
@@ -109,12 +127,12 @@ def home():
                 <section class="section">
                     <h2>Experience</h2>
                     <div class="card">
-                        <p><strong>DevOps Intern - Sahaba Solutions LLP</strong></p>
+                        <h3>DevOps Intern - Sahaba Solutions LLP</h3>
                         <ul>
-                            <li>Designed AWS architectures, reducing downtime by 20%.</li>
-                            <li>Automated provisioning using Terraform, improving speed by 30%.</li>
-                            <li>Optimized CI/CD pipelines with GitHub Actions.</li>
-                            <li>Monitored cloud systems, boosting uptime by 25%.</li>
+                            <li>Designed AWS architectures to reduce downtime by 20%.</li>
+                            <li>Automated resource provisioning using Terraform, improving speed by 30%.</li>
+                            <li>Enhanced CI/CD pipelines, reducing manual interventions.</li>
+                            <li>Monitored resources, improving uptime by 25%.</li>
                         </ul>
                     </div>
                 </section>
@@ -123,11 +141,11 @@ def home():
                     <div class="grid">
                         <div class="card">
                             <h3>Elasticsearch Setup for Magento</h3>
-                            <p>Optimized Magento search with Elasticsearch, increasing performance by 25% and reaching 500+ developers through a published guide.</p>
+                            <p>Optimized Magento search by 25% using Elasticsearch. Published a guide reaching 500+ developers.</p>
                         </div>
                         <div class="card">
                             <h3>MySQL Backups to S3</h3>
-                            <p>Implemented automated MySQL backups to S3 using AWS CLI and IAM, ensuring secure and efficient data retention.</p>
+                            <p>Implemented automated MySQL backups with AWS CLI and IAM for secure data retention.</p>
                         </div>
                     </div>
                 </section>
