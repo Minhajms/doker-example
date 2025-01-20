@@ -66,7 +66,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📞 Contact
 
-Minhaj - [@YourTwitter](www.linkedin.com/in/minhajms)
+Minhaj - [Linkedin](www.linkedin.com/in/minhajms)
 
 Project Link: [https://github.com/Minhajms/docker-example](https://github.com/Minhajms/docker-example)
 
