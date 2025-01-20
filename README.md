@@ -1,4 +1,4 @@
-# 🐳 Docker Examples
+# 🐋 Docker Examples
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
@@ -6,11 +6,9 @@
 
 A comprehensive collection of Docker examples and configurations designed to help developers understand and implement containerization effectively. Perfect for beginners and intermediate users looking to master Docker basics.
 
-<div align="center">
-  <img src="/api/placeholder/800/400" alt="Docker Architecture Overview">
-</div>
+![Docker Architecture Overview](/api/placeholder/800/400)
 
-## 🚀 Features
+## 🔗 🚀 Features
 
 - Step-by-step Docker setup guides with detailed explanations
 - Ready-to-use Dockerfile templates for various applications
@@ -69,5 +67,5 @@ Project Link: [https://github.com/Minhajms/docker-example](https://github.com/Mi
 ---
 
 <div align="center">
-  <strong>Happy Dockerizing! 🐳</strong>
+  <strong>Happy Dockerizing! 🐋</strong>
 </div>
