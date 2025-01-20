@@ -21,7 +21,6 @@ A comprehensive collection of Docker examples and configurations designed to hel
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
-
 - Docker Engine (version 20.10 or higher)
 - Git
 - Basic command-line knowledge
@@ -43,9 +42,6 @@ cd docker-example
 ls examples/
 ```
 
-
-
-
 ## 🤝 Contributing
 
 We welcome contributions! Here's how you can help:
@@ -66,7 +62,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📞 Contact
 
-Minhaj - [Linkedin](www.linkedin.com/in/minhajms)
+Minhaj - [LinkedIn](https://www.linkedin.com/in/minhajms)
 
 Project Link: [https://github.com/Minhajms/docker-example](https://github.com/Minhajms/docker-example)
 
