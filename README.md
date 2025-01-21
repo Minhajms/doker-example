@@ -6,8 +6,7 @@
 
 A comprehensive collection of Docker examples and configurations designed to help developers understand and implement containerization effectively. Perfect for beginners and intermediate users looking to master Docker basics.
 
-![Docker Architecture Overview](/api/placeholder/800/400)
-
+![Docker Architecture](./path-to-your-image/docker-architecture.png)
 ## 🔗 🚀 Features
 
 - Step-by-step Docker setup guides with detailed explanations
